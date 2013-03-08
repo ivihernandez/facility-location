@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<inputs>
+	<inputFiles number="2">
+		<demandCenters>C:\\Users\\ivihernandez\\Documents\\PhD-systems-engineering\\projects\\data\\location-datasets\\swain1971.xml</demandCenters>
+		<distributionCenters>C:\\Users\\ivihernandez\\Documents\\PhD-systems-engineering\\projects\\data\\location-datasets\\swain1971.xml</distributionCenters>
+	</inputFiles>
+	<capacitated>false</capacitated>
+	<populationSize>50</populationSize>
+	<generations>50</generations>
+	<runs>3</runs>
+	<objectiveFunctions number="4">
+		<objective>
+			<type>minimize</type>
+			<function>get_deployed_facilities</function>
+		</objective>
+		<objective>
+			<type>minimize</type>
+			<function>get_total_distance</function>
+		</objective>
+		<objective>
+			<type>minimize</type>
+			<function>get_total_distance_after_interdiction</function>
+		</objective>
+		<objective>
+			<type>maximize</type>
+			<function>get_interdicted_facilities</function>
+		</objective>
+	</objectiveFunctions>
+</inputs>
